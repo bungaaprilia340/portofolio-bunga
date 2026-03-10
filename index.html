@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bunga Aprilia | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background:linear-gradient(135deg,#0f172a,#1e3a8a);
+  color:white;
+}
+
+/* ===== NAVBAR ===== */
+header{
+  padding:20px 8%;
+}
+
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-weight:700;
+  font-size:22px;
+  background:linear-gradient(90deg,#38bdf8,#60a5fa);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+nav a{
+  margin-left:20px;
+  text-decoration:none;
+  color:white;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#38bdf8;
+}
+
+/* ===== HERO SECTION ===== */
+.hero{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:80px 8%;
+  flex-wrap:wrap;
+}
+
+.hero-text{
+  max-width:500px;
+  animation:fadeUp 1s ease forwards;
+}
+
+.hero-text h1{
+  font-size:28px;
+  font-weight:300;
+}
+
+.hero-text h2{
+  font-size:48px;
+  font-weight:700;
+  margin:10px 0;
+  background:linear-gradient(90deg,#38bdf8,#60a5fa);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.hero-text p{
+  margin-bottom:30px;
+  color:#cbd5e1;
+  font-size:16px;
+}
+
+.btn{
+  display:inline-block;
+  padding:12px 28px;
+  border-radius:30px;
+  background:linear-gradient(90deg,#38bdf8,#60a5fa);
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.4);
+}
+
+/* ===== HERO IMAGE ===== */
+.hero-img{
+  position:relative;
+  animation:fadeUp 1.2s ease forwards;
+}
+
+.hero-img img{
+  width:300px;
+  border-radius:20px;
+  box-shadow:0 20px 40px rgba(0,0,0,0.5);
+  animation:float 4s ease-in-out infinite;
+}
+
+/* Glow effect behind image */
+.hero-img::before{
+  content:"";
+  position:absolute;
+  width:320px;
+  height:320px;
+  background:radial-gradient(circle,#38bdf8,transparent 70%);
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  filter:blur(60px);
+  z-index:-1;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+@keyframes float{
+  0%{transform:translateY(0);}
+  50%{transform:translateY(-15px);}
+  100%{transform:translateY(0);}
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:900px){
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .hero-img{
+    margin-top:40px;
+  }
+
+  .hero-text h2{
+    font-size:36px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <h2 class="logo">Bunga.dev</h2>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="organisasi.html">Organization</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Hi, I'm</h1>
+    <h2>Bunga Aprilia</h2>
+    <p>Web Developer Student | RPL Enthusiast</p>
+    <a href="about.html" class="btn">About Me</a>
+  </div>
+
+  <div class="hero-img">
+    <img src="images/ChatGPT Image 22 Feb 2026, 09.02.30.png" alt="Bunga Aprilia">
+  </div>
+</section>
+
+</body>
+</html>

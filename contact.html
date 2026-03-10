@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Bunga.dev</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
+}
+
+body{
+min-height:100vh;
+background:linear-gradient(135deg,#0f172a,#1e3a8a);
+color:white;
+}
+
+/* NAVBAR */
+
+header{
+padding:20px 8%;
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-weight:700;
+font-size:22px;
+background:linear-gradient(90deg,#38bdf8,#60a5fa);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+nav a{
+margin-left:20px;
+text-decoration:none;
+color:white;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* CONTACT SECTION */
+
+.contact{
+padding:60px 8%;
+display:flex;
+justify-content:center;
+}
+
+.contact-card{
+background:rgba(255,255,255,0.08);
+padding:40px;
+border-radius:20px;
+backdrop-filter:blur(12px);
+box-shadow:0 20px 40px rgba(0,0,0,0.4);
+max-width:700px;
+width:100%;
+animation:fadeUp 1s ease forwards;
+}
+
+.contact-card h1{
+text-align:center;
+margin-bottom:10px;
+font-size:34px;
+}
+
+.contact-card p{
+text-align:center;
+color:#cbd5e1;
+margin-bottom:30px;
+}
+
+/* FORM */
+
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input, textarea{
+padding:12px;
+border:none;
+border-radius:10px;
+outline:none;
+background:rgba(255,255,255,0.15);
+color:white;
+}
+
+textarea{
+resize:none;
+height:120px;
+}
+
+input::placeholder,
+textarea::placeholder{
+color:#e2e8f0;
+}
+
+/* BUTTON */
+
+button{
+padding:12px;
+border:none;
+border-radius:25px;
+background:linear-gradient(90deg,#38bdf8,#60a5fa);
+color:white;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 20px rgba(0,0,0,0.4);
+}
+
+/* CONTACT INFO */
+
+.info{
+margin-top:30px;
+text-align:center;
+font-size:14px;
+color:#cbd5e1;
+}
+
+.info a{
+color:#38bdf8;
+text-decoration:none;
+}
+
+/* ANIMATION */
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+.contact-card{
+padding:30px;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="nav">
+<h2 class="logo">Bunga.dev</h2>
+<nav>
+<a href="index.html">Home</a>
+</nav>
+</div>
+</header>
+
+<section class="contact">
+
+<div class="contact-card">
+
+<h1>Contact Me</h1>
+<p>Tertarik dengan saya? Silahkan hubungi saya.</p>
+
+<form>
+<input type="text" placeholder="Nama Anda" required>
+<input type="email" placeholder="Email Anda" required>
+<textarea placeholder="Tulis pesan Anda..."></textarea>
+<button type="submit">Send Message</button>
+</form>
+
+<div class="info">
+<p>Email : bungaaprilia2009@email.com</p>
+<p>Instagram : <a href="https://www.instagram.com/just_bung4?igsh=MWtzbm1tMGQ5bGI5OQ==">@just_bung4</a></p>
+<p>WhatsApp : <a href="#">+62 857-3319-9327</a></p>
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>

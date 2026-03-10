@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me | Bunga.dev</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      display: flex;
+      flex-direction: column;
+      color: white;
+    }
+
+    /* ===== NAVBAR ===== */
+    header {
+      padding: 20px 8%;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 22px;
+      background: linear-gradient(90deg, #38bdf8, #60a5fa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 400;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    /* ===== CONTENT ===== */
+    .content {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .card {
+      max-width: 800px;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 50px;
+      border-radius: 20px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      text-align: center;
+      animation: fadeUp 1s ease forwards;
+    }
+
+    .card h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .card p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #e2e8f0;
+    }
+
+    /* ===== ANIMATION ===== */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media(max-width: 768px){
+      .card {
+        padding: 30px;
+      }
+
+      .card h1 {
+        font-size: 28px;
+      }
+
+      .card p {
+        font-size: 14px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <h2 class="logo">Bunga.dev</h2>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<section class="content">
+  <div class="card">
+    <h1>About Me</h1>
+    <p>
+      Halo, saya <strong>Bunga Aprilia Ariska</strong>, siswi SMKN 6 Malang jurusan Rekayasa Perangkat Lunak (RPL). 
+      Saya memiliki minat dalam pengembangan website dan desain UI/UX serta terbiasa menggunakan 
+      HTML, CSS, PHP, dan MySQL untuk membangun sistem berbasis web.
+      <br><br>
+      Selain itu, saya aktif sebagai <strong>Ketua Umum organisasi pecinta alam</strong> di sekolah, 
+      yang membentuk kemampuan kepemimpinan, komunikasi, dan problem solving saya.
+    </p>
+  </div>
+</section>
+
+</body>
+</html>

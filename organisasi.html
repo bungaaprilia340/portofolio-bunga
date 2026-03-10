@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Organization | Bunga.dev</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color:white;
+}
+
+/* ===== NAVBAR ===== */
+header{
+    padding:20px 8%;
+}
+
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-weight:700;
+    font-size:22px;
+    background: linear-gradient(90deg,#38bdf8,#60a5fa);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+nav a{
+    margin-left:20px;
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* ===== TITLE ===== */
+.judul{
+    text-align:center;
+    margin:40px 0;
+    font-size:36px;
+    font-weight:600;
+    animation:fadeUp 1s ease forwards;
+}
+
+/* ===== GALLERY ===== */
+.gallery{
+    padding:0 8% 60px 8%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+    gap:25px;
+}
+
+/* ===== CARD ===== */
+.card{
+    background:rgba(255,255,255,0.08);
+    border-radius:20px;
+    overflow:hidden;
+    backdrop-filter:blur(12px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.4);
+    transition:0.4s;
+    animation:fadeUp 1s ease forwards;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 45px rgba(0,0,0,0.6);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card-content h3{
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+.card-content p{
+    font-size:14px;
+    line-height:1.6;
+    color:#cbd5e1;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+    .judul{
+        font-size:28px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <h2 class="logo">Bunga.dev</h2>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<h1 class="judul">Organization Experience</h1>
+
+<div class="gallery">
+
+    <div class="card">
+        <img src="images/2.jpeg" alt="">
+        <div class="card-content">
+            <h3>Diklat SAR Palasena A21</h3>
+            <p>Pengalungan scraft sebagai tanda sah menjadi anggota Palasena Angkatan 21 (15 - 17 November 2024).</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/29.jpg" alt="">
+        <div class="card-content">
+            <h3>Bakti Sosial Puthuk Lesung</h3>
+            <p>Kegiatan bersih lingkungan di Purwosari, Pasuruan (15 - 16 Februari 2025).</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/IMG-20251208-WA0403.jpg" alt="">
+        <div class="card-content">
+            <h3>Diklat SAR Palasena A22</h3>
+            <p>Pengalungan scraft anggota Angkatan 22 (5 - 7 Desember 2025).</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/3.jpeg" alt="">
+        <div class="card-content">
+            <h3>Galang Dana Aceh & Sumatra</h3>
+            <p>Aksi sosial membantu korban bencana (20 - 30 Desember 2025).</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/47.jpg" alt="">
+        <div class="card-content">
+            <h3>Ekspedisi Gn. Arjuno 3339 MDPL</h3>
+            <p>Kegiatan tahunan Palasena (7 - 9 Juli 2025).</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
